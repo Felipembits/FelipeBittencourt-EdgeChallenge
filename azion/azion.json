@@ -1,0 +1,20 @@
+{
+  "name": "FelipeBittencourt-EdgeChallenge-2opkep",
+  "env": "production",
+  "application": {
+    "id": 1697216718,
+    "name": "FelipeBittencourt-EdgeChallenge-2opkep"
+  },
+  "domain": {
+    "id": 1697217662,
+    "name": "FelipeBittencourt-EdgeChallenge-2opkep",
+    "url": "xnkv8yi0ep.map.azionedge.net"
+  },
+  "function": {
+    "id": 12114,
+    "name": "FelipeBittencourt-EdgeChallenge-2opkep"
+  },
+  "version-id": "20231013164609",
+  "type": "react",
+  "mode": "deliver"
+}
