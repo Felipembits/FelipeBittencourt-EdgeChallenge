@@ -128,7 +128,6 @@ p {
 }
 
 .allApp::before {
-  content: "";
   background: url('./vector-bg.svg') no-repeat;
   position: absolute;
   width: 807px;
@@ -140,7 +139,6 @@ p {
 
 .allApp::after {
   content: "";
-  left: 50%;
   position: absolute;
   filter: blur(45px);
   transform: translateZ(0);
@@ -307,6 +305,41 @@ footer {
   stroke-width: 1.75;
 }
 
+@media (max-width: 1000px) {
+  .principalPart {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 2rem;
+    gap: 0;
+  }
+
+  .description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .base {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .aboutAzion {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .aboutAzionImage {
+    width: 70%;
+    align-self: center;
+  }
+
+  .textAboutAzion {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
 @media only screen and (min-width: 576px) {
   .allApp {
     min-height: calc(100vh - 12rem);
@@ -319,6 +352,46 @@ footer {
     margin-bottom: 0;
     text-align: left;
   }
+}
 
+@media (max-width: 576px) {
+  .principalPart {
+    margin-bottom: 2rem;
+  }
 
-} 
+  .aboutAzionImage {
+    width: 110%;
+    align-self: center;
+  }
+
+  .textAboutAzion {
+    font-size: .9rem;
+  }
+
+  .description h3 {
+    font-size: 1rem;
+  }
+
+  .navbar ul {
+    padding: 0;
+    gap: 0;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  .azionLogo {
+    margin-left: 0;
+  }
+
+  .navbar {
+    background-color: #221f1ea0;
+    padding: 1rem;
+  }
+  .principalPart {
+    margin-top: 4.2rem;
+  }
+
+  footer {
+    padding: 3rem 1rem;
+  }
+}
